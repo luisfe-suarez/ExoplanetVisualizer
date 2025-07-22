@@ -1,0 +1,40 @@
+Exoplanets: https://exoplanets.nasa.gov/alien-worlds/ways-to-find-a-planet/?intent=021#/2
+
+What are they?
+ Planet outside our solar system that usually orbits another star in our galaxy
+ Most Exoplantes are discovered in a small region of the Milky Way, but still 
+ far for a mission to be sent, with the closest one being 4 light years away from Earth. 
+
+Exploration of Exoplanets
+    They are very hard to see because they are very far and their brigthness is
+    usually hidden by their own Star. 
+    From data like weight, distance and mass we can infer things about their 
+    temperature, volume, atmospheres, etc.
+
+Why do we study Exoplanets?
+    We wan to understand what a habitable planet looks like, and understanding
+    what other kinds of worlds are possible out there. As well as exploring the
+    history of the universe.
+
+How to discover Exoplanets?
+    There are five methods: Transit Method, Radial Velocity, Direct Imaging,
+    Gravitational Microlensing, Astrometry
+
+    The method that has discovered the most exoplanets is Transit method
+
+Transit Method
+    During an Eclipse, the Moon transiting in between the Earth and Sun, blocks 
+    some of the light from the Sun for a period of time, making it dimmer. 
+    As we remember, Exoplanets orbit around a Star, which are often observable 
+    from Earth with the help of telescopes. When the Exoplanet orbits between 
+    that Star and the Earth, we observe changes in the brigthness.
+    These changes are subtle enough to suggest the presence of a planet. 
+
+What else do we know?
+    The Transit Method is also useful to understand the atmospheric composition
+    of the Exoplanet. As light passes through the atmosphere, the resulting spectrum 
+    and light allows scientists to determine which elements are present 
+    (shoutout to todays in class tutorial)
+    
+
+
