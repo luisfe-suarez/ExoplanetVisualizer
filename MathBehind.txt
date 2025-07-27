@@ -1,0 +1,42 @@
+ORBITS: For simplification purposes asumme orbits are circular 
+
+Circular orbits:
+For an orbit in a circumferences with radius 'r' and period 'P':
+    Angular Velocity: radians / seconds
+        W = 2π / P 
+    Speed of object: 
+        V = 2πr / p or Wr
+    Angle formed:
+        Θ =  2πt / p or Wt for some time 't'
+
+    Transit:
+    If looked from a 2D plane, it happens when the position of the 
+    planet in some time t "x(t)" equals 0. 
+    Considering the location of a point in a circumference, the location of 
+    the planet in some time t is given by:
+        x(t) = r * cos(Θ) = r * cos(Wt)
+
+    Determine if transit is happening: 
+        Transit when the projected distance between the Star Center and the planet 
+        is less than the sum of Radius of the bodies.
+        d(t) = sqrt(x(t)^2 + y(t)^2) 
+
+
+
+Transit Method: Simplication - Use a simple geometric model
+    Graph would have Flux as the y-axis and time as the x-axis 
+    Flux is defined as:
+        F(t) = 1 - (Rp)^2 / (Rs)^2 if there is intersection 
+        F(t) = 1 otherwise
+
+DATA REQUIRED: 
+    - Period of transit of the planet
+    - Radius of the orbit 
+    - Radius of each Planet
+    
+
+
+    
+
+    
+    
