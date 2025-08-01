@@ -54,12 +54,12 @@ const LightCurvePlot: React.FC<LightCurvePlotProps> = ({
     const plotX = padding
     const plotY = padding
     
-    // Time range - show multiple periods to see repeated transits
+    // Time range - extreme zoom for maximum transit detail
     const maxPeriod = Math.max(
       planetData1?.period || 0,
       planetData2?.period || 0
     )
-    const timeRange = Math.max(10, maxPeriod * 2) // Show at least 2 periods
+    const timeRange = Math.max(1, maxPeriod * 0.1) // Show only 10% of a period for extreme detail
     const startTime = Math.max(0, currentTime - timeRange / 2)
     const endTime = startTime + timeRange
     

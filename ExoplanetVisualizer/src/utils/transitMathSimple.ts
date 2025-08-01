@@ -1,5 +1,15 @@
 import type { PlanetData } from '../data/planets'
 
+
+/*
+For us to witness a transit, the exoplanet's orbital plane must be oriented 
+nearly edge-on to our view. In astronomical terms, this means the orbital
+inclination needs to be very close to 90 degrees. 
+Why 90 Degrees?
+If the orbital plane is significantly tilted away from 90 degrees,
+the planet will either pass above or below the star, from our perspective, 
+and no transit (or dimming of the star's light) will be observed. 
+*/
 export interface SimpleTransitData {
   isTransiting: boolean
   flux: number
