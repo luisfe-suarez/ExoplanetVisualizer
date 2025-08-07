@@ -19,10 +19,13 @@ This project simplifies the transit detection problem using basic orbital mechan
 
 I decided to assume a circular orbit (look at pylightcurve repo for more detailed orbits) and calculate the planet’s position using:
 
-ω = 2π / P (angular velocity)
-θ = ω × t (orbital angle)
-x = a × cos(θ) (x-axis position)
-y = a × sin(θ) (y-axis position)
+`ω = 2π / P (angular velocity)`
+
+`θ = ω × t (orbital angle)`
+
+`x = a × cos(θ) (x-axis position)`
+
+`y = a × sin(θ) (y-axis position)`
 
 Where:
 
@@ -41,7 +44,7 @@ Transit occurs if |θ(deg) − 90°| < transit window
 
 When a transit occurs, I model the star’s brightness drop based on the relative sizes of the planet and star. Normal m:
 
-Transit Depth = (Rp / Rs)^2
+`Transit Depth = (Rp / Rs)^2`
 
 Where:
 
@@ -50,7 +53,7 @@ Where:
 
 I ran into some errors due to scaling of the planets and the actual dip in flux so I decided to use cosine interpolation to give more of a "u-shaped" curve instead of a sharp decrease that produced a "v-shaped" curve.
 
-Flux = 1 − Transit Depth × (cos(π × n) + 1) / 2
+`Flux = 1 − Transit Depth × (cos(π × n) + 1) / 2`
 
 Where `n` is the normalized distance from the transit center (`n = 0` at center, `n = 1` at edges).
 
@@ -65,13 +68,16 @@ As I mentioned before, the light curves made no sense when I was using actual ra
 ## Key Functions
 
 `calculateSimpleTransit()` Determines position, orbital angle, and flux at a given time
-`generateLightCurve()` Generates flux data over a range of times `getScaleInfo()` Converts planet/star radii to AU and KM for display and understanding
+
+`generateLightCurve()` Generates flux data over a range of times 
+
+`getScaleInfo()` Converts planet/star radii to AU and KM for display and understanding
 
 ## Built With
 
 - TypeScript
 - React (frontend)
-- Real exoplanet data from [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/)
+- Real exoplanet data from https://exoplanetarchive.ipac.caltech.edu/
 
 ## 📈 Future Enhancements
 
