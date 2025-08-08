@@ -1,4 +1,6 @@
 {
+  "repository": "https://github.com/luisfe-suarez/ExoplanetVisualizer",
+  "homepage": "http://luisfe-suarez.github.io/ExoplanetVisualizer",
   "name": "exoplanetvisualizer",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +9,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.1.0",
