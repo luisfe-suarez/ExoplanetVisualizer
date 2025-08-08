@@ -3,7 +3,6 @@ import PlanetSelector from './components/PlanetSelector'
 import Controls from './components/Controls'
 import OrbitVisualizer from './components/OrbitVisualizer'
 import LightCurvePlot from './components/LightCurvePlot'
-import CompareToggle from './components/CompareToggle'
 
 interface SimulationState {
   isPlaying: boolean
@@ -19,7 +18,6 @@ function App() {
     currentTime: 0,
     speed: 1
   })
-  const [overlayMode, setOverlayMode] = useState<boolean>(false)
 
   // Automatic time progression when playing
   useEffect(() => {
@@ -75,19 +73,25 @@ function App() {
       </section>
 
       <section className="light-curve-section">
-        <div className="light-curve-header">
-          <h2 className="light-curve-title">Light Curve</h2>
-          <CompareToggle
-            overlayMode={overlayMode}
-            onToggle={setOverlayMode}
-          />
+        <h2 className="light-curve-title">Light Curves</h2>
+        <div className="light-curves-container">
+          <div className="light-curve-plot">
+            <h3>Planet 1</h3>
+            <LightCurvePlot
+              planet={selectedPlanet1}
+              currentTime={simulationState.currentTime}
+              title="Planet 1"
+            />
+          </div>
+          <div className="light-curve-plot">
+            <h3>Planet 2</h3>
+            <LightCurvePlot
+              planet={selectedPlanet2}
+              currentTime={simulationState.currentTime}
+              title="Planet 2"
+            />
+          </div>
         </div>
-        <LightCurvePlot
-          planet1={selectedPlanet1}
-          planet2={selectedPlanet2}
-          currentTime={simulationState.currentTime}
-          overlayMode={overlayMode}
-        />
       </section>
     </div>
   )

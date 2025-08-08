@@ -1,3 +1,5 @@
+Accesible at https://luisfe-suarez.github.io/ExoplanetVisualizer/
+
 # Exoplanet Transit Visualizer
 
 Visualization tool of Transit Method, a common method for Exoplanet discovert. The simulation models the change in brigthness of a star over time, as an orbiting planet passes in front of it.

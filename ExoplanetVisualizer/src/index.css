@@ -240,26 +240,31 @@ body {
   margin-bottom: 30px;
 }
 
-.light-curve-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .light-curve-title {
   font-size: 1.5rem;
   color: #64b5f6;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.compare-toggle {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.light-curves-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-.compare-toggle input[type="checkbox"] {
-  transform: scale(1.2);
+.light-curve-plot {
+  background-color: #0f0f0f;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #333;
+}
+
+.light-curve-plot h3 {
+  color: #64b5f6;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .light-curve-canvas {
@@ -273,6 +278,10 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .visualization-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .light-curves-container {
     grid-template-columns: 1fr;
   }
   
