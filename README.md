@@ -13,6 +13,17 @@ For a transit to occur:
 - The planet’s **orbital plane** must be nearly edge-on (inclination ~ 90°) from our perspective.
 - The **light curve** of the star will show a small, temporary drop in brightness.
 
+![Light Curve plot](https://github.com/user-attachments/assets/597dbfd4-3a33-4eee-9b0d-b87e554cdc7a)
+
+There are many factors that influence the dip in brightness and our ability to detect the exoplanet. 
+
+- Period: Planets with a smaller orbit (semi-major axis) have smaller periods, transiting in front of the star in less time, making it more likely for an observer to see the dip in brightness during limited observation time.
+
+- Size: Planets which are bigger than its host star will cover more light from an observer perspective (like blocking the sunlight with our thumb versus using our whole hand). This makes the dip in brightness more evident and light curves with more prominent curves.
+
+- Multiple objects in orbit: It could be the case that multiple objects are orbiting the same star, with overlapping transits in front of the star. When this is the case, 
+
+
 ## Physics & Math Behind the Simulation
 
 This project simplifies the transit detection problem using basic orbital mechanics and geometry.
